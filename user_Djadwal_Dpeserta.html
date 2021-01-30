@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Daftar Peserta</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="user/assets/img/favicon.png" rel="icon">
+  <link href="user/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="user/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="user/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="user/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="user/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="user/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="user/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="user/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="user/assets/css/style.css" rel="stylesheet">
+
+  <style>
+      .display-0 {
+          display: none;
+      }
+  </style>
+
+  <!-- datatable -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css"/>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="user_home.html"><span>SISTA</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="user/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="user_home.html">Home</a></li>
+          <li class="active"><a href="user_jadwal.html">Jadwal</a></li>
+          <li><a href="user_daftar_peserta.html">Daftar Seminar</a></li>
+          <li><a href="berita.html">Berita</a></li>
+
+          <li class="get-started"><a href="login.html">Login</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <span>Halaman Jadwal</span>
+          <ol>
+            <li><a href="user_jadwal.html">Home</a></li>
+            <li><span>Detail Jadwal</span></li>
+            <li><span>Daftar Peserta</span></li>
+            <li>View</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="alert alert-primary" style="width: 100%;">
+          <center>Daftar Peserta</center>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div id="judul">
+                <span style="font-size: large;">Seminar Mahasiswa : Diego Armando (0110219012) - Teknik Informatika </span> <br>
+                <span style="font-size: large;">Judul : Rancang Bangun Aplikasi Seminar Tugas Akhir Menggunakan MVC Framework</span> <br>
+                <span style="font-size: large;">Waktu Seminar : Senin, 4 Januari 2020, Jam 10.00</span>
+            </div>
+            <div class="card mt-2" style="width: 100%;">
+                <div class="card-body">
+                    <div class="alert display-0" role="alert" id="alert-validation"></div>
+                    <div class="row">
+                        <div class="col-5">
+                            <!-- <form> -->
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">NIM</label>
+                                  <input type="number" class="form-control" id="nim" name="nim" placeholder="Your Nim">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Nama</label>
+                                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Prodi</label>
+                                    <select class="form-control" id="prodi" name="prodi">
+                                      <option value="">Pilih Prodi</option>
+                                      <option value="Teknik Informatika">Teknik Informatika</option>
+                                      <option value="Sistem Informasi">Sistem Informasi</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Program :</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">D3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">S1 Reguler</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadi32">S1 Fast Track</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">S2</label>
+                                    </div>
+                                </div>
+                                <button id="submit-daftar" class="btn btn-primary">Submit</button>
+                            <!-- </form> -->
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="fixed-bottom" id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            Created By STT Terpadu Nurul Fikri, Students
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="user/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="user/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="user/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="user/assets/vendor/php-email-form/validate.js"></script>
+  <script src="user/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="user/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="user/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="user/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="user/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="user/assets/vendor/aos/aos.js"></script>
+  <script src="user/assets/js/main.js"></script>
+  <!-- datatable -->
+  <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+
+  <script>
+    $('#example').DataTable()
+
+    // set variable
+    $.alertMsg = $('#alert-validation')
+
+    let show_alert = (data) => {
+            $.alertMsg.slideToggle()
+            $.alertMsg.addClass(data.class + ' alert-display')
+            $.alertMsg.html('<i class="fa fa-exclamation-circle"></i> '+data.message)
+            $(data.focus.toString()).focus()
+            return false;
+        }
+
+    $('#submit-daftar').on('click', function(){
+        if($.alertMsg.hasClass('alert-display')) {
+            $.alertMsg.slideToggle() // Toggle Alert
+            $.alertMsg.removeClass('alert-display')
+        }
+        if($.trim($('input[name="nim"]').val()) == '') {
+            show_alert({class:'alert-warning',message:'NIM is required!',focus:'input[name="nim"]'})
+            return;
+        }
+        if($.trim($('input[name="name"]').val()) == '') {
+            show_alert({class:'alert-warning',message:'Name is required!',focus:'input[name="name"]'})
+            return;
+        }
+        if($.trim($('select[name="prodi"]').val()) == '') {
+            show_alert({class:'alert-warning',message:'Prodi is required!',focus:'select[name="prodi"]'})
+            return;
+        }
+        window.location.href = 'user_jadwal.html'
+    })
+  </script>
+</body>
+
+</html>

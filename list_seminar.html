@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Daftar Seminar</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="src/assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="src/assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
+    <link rel="stylesheet" href="src/assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="src/assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="src/assets/vendors/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css"/>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="src/assets/css/shared/style.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="src/assets/css/demo_1/style.css">
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="src/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+          <a class="navbar-brand brand-logo" href="dashboard.html">
+            <img src="src/assets/images/logo.svg" alt="logo" /> </a>
+          <a class="navbar-brand brand-logo-mini" href="dashboard.html">
+            <img src="src/assets/images/logo-mini.svg" alt="logo" /> </a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
+              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle" src="src/assets/images/faces/face8.jpg" alt="Profile image"> </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                <div class="dropdown-header text-center">
+                  <img class="img-md rounded-circle" src="src/assets/images/faces/face8.jpg" alt="Profile image">
+                </div>
+                <a class="dropdown-item" href="profile_user.html">My Profile</a>
+                <a class="dropdown-item" href="login.html">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="profile-image">
+                  <img class="img-xs rounded-circle" src="src/assets/images/faces/face8.jpg" alt="profile image">
+                  <div class="dot-indicator bg-success"></div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="designation">Super Admin</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item nav-category">Main Menu</li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="list_seminar.html">
+                <i class="menu-icon typcn typcn-shopping-bag"></i>
+                <span class="menu-title">Daftar Seminar</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="peserta_seminar.html">
+                <i class="menu-icon typcn typcn-bell"></i>
+                <span class="menu-title">Peserta Seminar</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user_verification.html">
+                <i class="menu-icon typcn typcn-bell"></i>
+                <span class="menu-title">Verifikasi User</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user_registration.html">
+                <i class="menu-icon typcn typcn-bell"></i>
+                <span class="menu-title">Registrasi User</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                    <div class="block-header">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <ul class="breadcrumb breadcrumb-style ">
+                                        <li class="breadcrumb-item">
+                                            <h4 class="page-title">Daftar Seminar</h4>
+                                        </li>
+                                        <li class="breadcrumb-item bcrumb-1">
+                                            <a href="">
+                                                <i class="fa fa-home"></i> Home
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item">Daftar Sminar</li>
+                                        <li class="breadcrumb-item">View</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary btn-lg mb-3" data-toggle="modal" data-target="#AddNewData">
+                                    Tambah Data
+                                </button>
+                            <table id="example" class="table table-striped" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">#</th>
+                                        <th class="text-center" scope="col">NIM</th>
+                                        <th class="text-left" scope="col">Nama</th>
+                                        <th class="text-left" scope="col">Seminar</th>
+                                        <th class="text-center" scope="col">Waktu</th>
+                                        <th class="text-left" scope="col">Ruangan</th>
+                                        <th class="text-center" scope="col">Peserta</th>
+                                        <th class="text-center" scope="col">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center" scope="row">1</th>
+                                        <td class="text-center">0110219045</td>
+                                        <td class="text-left">M. Fais Albaya</td>
+                                        <td class="text-left">Proposal</td>
+                                        <td class="text-center">2021-01-01 14:00:00</td>
+                                        <td class="text-left">Gedung B2 STT NF</td>
+                                        <td class="text-center"><span style="font-weight: bold;">10 views</span></td>
+                                        <td class="text-center"><i class="fa fa-edit fa-lg pr-2 detail" style="color: blue; cursor: pointer;" data-toggle="modal" data-target="#UpdateNewData" title="Edit"></i> <i class="fa fa-trash fa-lg delete" style="color: gray; cursor: pointer;" id="delete" title="Delete"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">2</th>
+                                        <td class="text-center">0110219045</td>
+                                        <td class="text-left">Anggi Dewiyana</td>
+                                        <td class="text-left">WEB Binar</td>
+                                        <td class="text-center">2021-01-01 14:00:00</td>
+                                        <td class="text-left">Gedung B2 STT NF</td>
+                                        <td class="text-center"><span style="font-weight: bold;">10 views</span></td>
+                                        <td class="text-center"><i class="fa fa-edit fa-lg pr-2 detail" style="color: blue; cursor: pointer;" data-toggle="modal" data-target="#UpdateNewData" title="Edit"></i> <i class="fa fa-trash fa-lg delete" style="color: gray; cursor: pointer;" id="delete" title="Delete"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">3</th>
+                                        <td class="text-center">0110219045</td>
+                                        <td class="text-left">M. Alvin</td>
+                                        <td class="text-left">Proposal</td>
+                                        <td class="text-center">2021-01-01 14:00:00</td>
+                                        <td class="text-left">Gedung B2 STT NF</td>
+                                        <td class="text-center"><span style="font-weight: bold;">10 views</span></td>
+                                        <td class="text-center"><i class="fa fa-edit fa-lg pr-2 detail" style="color: blue; cursor: pointer;" data-toggle="modal" data-target="#UpdateNewData" title="Edit"></i> <i class="fa fa-trash fa-lg delete" style="color: gray; cursor: pointer;" id="delete" title="Delete"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">4</th>
+                                        <td class="text-center">0110219045</td>
+                                        <td class="text-left">M. Iqbal</td>
+                                        <td class="text-left">Proposal</td>
+                                        <td class="text-center">2021-01-01 14:00:00</td>
+                                        <td class="text-left">Gedung B2 STT NF</td>
+                                        <td class="text-center"><span style="font-weight: bold;">10 views</span></td>
+                                        <td class="text-center"><i class="fa fa-edit fa-lg pr-2 detail" style="color: blue; cursor: pointer;" data-toggle="modal" data-target="#UpdateNewData" title="Edit"></i> <i class="fa fa-trash fa-lg delete" style="color: gray; cursor: pointer;" id="delete" title="Delete"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" scope="row">5</th>
+                                        <td class="text-center">0110219045</td>
+                                        <td class="text-left">M. Febryan</td>
+                                        <td class="text-left">Seminar akhir</td>
+                                        <td class="text-center">2021-01-01 14:00:00</td>
+                                        <td class="text-left">Gedung B2 STT NF</td>
+                                        <td class="text-center"><span style="font-weight: bold;">10 views</span></td>
+                                        <td class="text-center"><i class="fa fa-edit fa-lg pr-2 detail" style="color: blue; cursor: pointer;" data-toggle="modal" data-target="#UpdateNewData" title="Edit"></i> <i class="fa fa-trash fa-lg delete" style="color: gray; cursor: pointer;" id="delete" title="Delete"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="AddNewData" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 70%;" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Tambah Data</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert display-0" role="alert" id="alert-validation"></div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group">
+                            <label for="">NIM</label>
+                            <input type="number" class="form-control" id="nim" name="nim" placeholder="your nim">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nama</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="your name">
+                        </div>
+                        <div class="form-group">
+                          <label for="prodi">Prodi</label>
+                          <select class="form-control" id="prodi" name="prodi">
+                            <option value="">Pilih Prodi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Waktu</label>
+                          <input type="datetime-local" class="form-control" id="waktu" name="waktu" placeholder="waktu">
+                        </div>
+                        <div class="form-group">
+                          <label for="">Ruangan</label>
+                          <input type="text" class="form-control" id="ruangan" name="ruangan" placeholder="ruangan">
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="seminar">Seminar</label>
+                          <select class="form-control" id="seminar" name="seminar">
+                            <option value="">Pilih Seminar</option>
+                            <option value="Proposal">Proposal</option>
+                            <option value="Seminar Hasil">Seminar Hasil</option>
+                            <option value="Seminar Akhir">Seminar Akhir</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="pembimbing">Pembimbing</label>
+                          <select class="form-control" id="pembimbing" name="pembimbing">
+                            <option value="">Pilih Pembimbing</option>
+                            <option value="Sirojul Munir S.SI, M.KOM">Sirojul Munir S.SI, M.KOM</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="penguji1">Penguji 1</label>
+                          <select class="form-control" id="penguji1"  name="penguji1">
+                            <option value="">Pilih Penguji 1</option>
+                            <option value="Ahmad Rio M.SI">Ahmad Rio M.SI</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="penguji2">Penguji 2</label>
+                          <select class="form-control" id="penguji2" name="penguji2">
+                            <option value="">Pilih Penguji 2</option>
+                            <option value="Amalia Rahmah M.T">Amalia Rahmah M.T</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Judul TA</label>
+                          <textarea class="form-control" id="judul_ta" name="judul_ta" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" id="saveAddData" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="UpdateNewData" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 70%;" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Edit Data</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert display-0" role="alert" id="alert-validation-update"></div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group">
+                            <label for="">NIM</label>
+                            <input type="number" class="form-control" id="u_nim" name="u_nim" placeholder="your nim">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nama</label>
+                            <input type="text" class="form-control" id="u_name" name="u_name" placeholder="your name">
+                        </div>
+                        <div class="form-group">
+                          <label for="prodi">Prodi</label>
+                          <select class="form-control" id="u_prodi" name="u_prodi">
+                            <option value="">Pilih Prodi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Waktu</label>
+                          <input type="datetime-local" class="form-control" id="u_waktu" name="u_waktu" placeholder="waktu">
+                        </div>
+                        <div class="form-group">
+                          <label for="">Ruangan</label>
+                          <input type="text" class="form-control" id="u_ruangan" name="u_ruangan" placeholder="ruangan">
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="seminar">Seminar</label>
+                          <select class="form-control" id="u_seminar" name="u_seminar">
+                            <option value="">Pilih Seminar</option>
+                            <option value="Proposal">Proposal</option>
+                            <option value="Seminar Hasil">Seminar Hasil</option>
+                            <option value="Seminar Akhir">Seminar Akhir</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="pembimbing">Pembimbing</label>
+                          <select class="form-control" id="u_pembimbing" name="u_pembimbing">
+                            <option value="">Pilih Pembimbing</option>
+                            <option value="Sirojul Munir S.SI, M.KOM">Sirojul Munir S.SI, M.KOM</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="penguji1">Penguji 1</label>
+                          <select class="form-control" id="u_penguji1"  name="u_penguji1">
+                            <option value="">Pilih Penguji 1</option>
+                            <option value="Ahmad Rio M.SI">Ahmad Rio M.SI</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="penguji2">Penguji 2</label>
+                          <select class="form-control" id="u_penguji2" name="u_penguji2">
+                            <option value="">Pilih Penguji 2</option>
+                            <option value="Amalia Rahmah M.T">Amalia Rahmah M.T</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Judul TA</label>
+                          <textarea class="form-control" id="u_judul_ta" name="u_judul_ta" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" id="saveUpdateData" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Created By STT Terpadu Nurul FIkri, Students</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Group Of Ten SISTA Projects</span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="src/assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="src/assets/vendors/js/vendor.bundle.addons.js"></script>
+    <script src="src/assets/js/shared/off-canvas.js"></script>
+    <script src="src/assets/js/shared/misc.js"></script>
+    <script src="src/assets/js/demo_1/dashboard.js"></script>
+    <script src="src/assets/js/shared/jquery.cookie.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $('#example').DataTable();
+        $('.delete').on('click', function(){
+            var r = confirm("Are you sure ?");
+
+            if (r !== true) return;
+        })
+
+        // set variable
+        $.alertMsg = $('#alert-validation')
+        $.alertMsgU = $('#alert-validation-update')
+
+        let show_alert = (data) => {
+            $.alertMsg.slideToggle()
+            $.alertMsg.addClass(data.class + ' alert-display')
+            $.alertMsg.html('<i class="fa fa-exclamation-circle"></i> '+data.message)
+            $(data.focus.toString()).focus()
+            return false;
+        }
+        let show_alert_update = (data) => {
+            $.alertMsgU.slideToggle()
+            $.alertMsgU.addClass(data.class + ' alert-display')
+            $.alertMsgU.html('<i class="fa fa-exclamation-circle"></i> '+data.message)
+            $(data.focus.toString()).focus()
+            return false;
+        }
+
+        $('#saveAddData').on('click', function(){
+            if($.alertMsg.hasClass('alert-display')) {
+                $.alertMsg.slideToggle() // Toggle Alert
+                $.alertMsg.removeClass('alert-display')
+            }
+            if($.trim($('input[name="nim"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'NIM is required!',focus:'input[name="nim"]'})
+                return;
+            }
+            if($.trim($('input[name="name"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Name is required!',focus:'input[name="name"]'})
+                return;
+            }
+            if($.trim($('select[name="prodi"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Prodi is required!',focus:'select[name="prodi"]'})
+                return;
+            }
+            if($.trim($('input[name="waktu"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Waktu is required!',focus:'input[name="waktu"]'})
+                return;
+            }
+            if($.trim($('input[name="ruangan"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Ruangan is required!',focus:'input[name="ruangan"]'})
+                return;
+            }
+            if($.trim($('select[name="seminar"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Seminar is required!',focus:'select[name="seminar"]'})
+                return;
+            }
+            if($.trim($('select[name="pembimbing"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Pembimbing is required!',focus:'select[name="pembimbing"]'})
+                return;
+            }
+            if($.trim($('select[name="penguji1"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Penguji 1 is required!',focus:'select[name="penguji1"]'})
+                return;
+            }
+            if($.trim($('select[name="penguji2"]').val()) == '') {
+                show_alert({class:'alert-warning',message:'Penguji 1 is required!',focus:'select[name="penguji2"]'})
+                return;
+            }
+
+            $('#AddNewData').modal('hide')
+
+        })
+
+        $('#saveUpdateData').on('click', function(){
+            if($.alertMsgU.hasClass('alert-display')) {
+                $.alertMsgU.slideToggle() // Toggle Alert
+                $.alertMsgU.removeClass('alert-display')
+            }
+            if($.trim($('input[name="u_nim"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'NIM is required!',focus:'input[name="u_nim"]'})
+                return;
+            }
+            if($.trim($('input[name="u_name"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Name is required!',focus:'input[name="u_name"]'})
+                return;
+            }
+            if($.trim($('select[name="u_prodi"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Prodi is required!',focus:'select[name="u_prodi"]'})
+                return;
+            }
+            if($.trim($('input[name="u_waktu"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Waktu is required!',focus:'input[name="u_waktu"]'})
+                return;
+            }
+            if($.trim($('input[name="u_ruangan"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Ruangan is required!',focus:'input[name="u_ruangan"]'})
+                return;
+            }
+            if($.trim($('select[name="u_seminar"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Seminar is required!',focus:'select[name="u_seminar"]'})
+                return;
+            }
+            if($.trim($('select[name="u_pembimbing"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Pembimbing is required!',focus:'select[name="u_pembimbing"]'})
+                return;
+            }
+            if($.trim($('select[name="u_penguji1"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Penguji 1 is required!',focus:'select[name="u_penguji1"]'})
+                return;
+            }
+            if($.trim($('select[name="u_penguji2"]').val()) == '') {
+                show_alert_update({class:'alert-warning',message:'Penguji 2 is required!',focus:'select[name="u_penguji2"]'})
+                return;
+            }
+
+            $('#UpdateNewData').modal('hide')
+
+        })
+
+    </script>
+  </body>
+</html>
